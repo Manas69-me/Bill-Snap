@@ -6,11 +6,11 @@ const configuredModel = import.meta.env.VITE_GEMINI_MODEL;
 // These are models returned by the user's own Gemini Models API list.
 // The service fails over only when a model is temporarily unavailable or not found.
 const MODEL_CANDIDATES = [
-  configuredModel,
-  "gemini-3.8-flash",
-  "gemini-3.6-flash",
-  "gemini-flash-latest",
   "gemini-3.5-flash-lite",
+  configuredModel,
+  "gemini-3.6-flash",
+  "gemini-3.8-flash",
+  "gemini-flash-latest",
 ].filter((model, index, all) => model && all.indexOf(model) === index);
 
 const CATEGORIES = [
@@ -155,7 +155,16 @@ For non-bills set is_bill=false, explain briefly in reason, and leave the extrac
       console.error(`Gemini model ${model} failed:`, error);
       // A 503/404 can be model-specific. Try the next model. Do not mask
       // authentication, quota, or permission errors with unnecessary calls.
-      if (status === 404 || status === 503 || status === 502 || status === 504) continue;
+      if (
+        status === 404 ||
+        status === 429 ||
+        status === 503 ||
+        status === 502 ||
+        status === 504
+      ) {
+        continue;
+      }
+      
       throw new Error(toUserMessage(error));
     }
   }
