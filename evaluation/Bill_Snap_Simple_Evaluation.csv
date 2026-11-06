@@ -1,0 +1,21 @@
+Test ID,Image condition,Expected,App result,Classification,Merchant,Date,Total,Category,Notes
+B01,Clear,Bill,Bill detected,Correct,Correct,Manual correction,Correct,Correct,Date was uncertain; user entered it manually.
+B02,Clear,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,All displayed fields matched.
+B03,Clear,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B04,Clear,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B05,Clear,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B06,Blurry,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B07,Blurry,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B08,Low light,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B09,Crumpled,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B10,Folded,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B11,Angled,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B12,Angled,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B13,Angled,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B14,Handwritten,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+B15,Messy handwriting,Bill,Bill detected,Correct,Correct,Correct,Correct,Correct,Exact extracted values not copied into sheet.
+N01,Selfie,Non-bill,Rejected,Correct,N/A,N/A,N/A,N/A,Correctly rejected as a non-bill.
+N02,ID card,Non-bill,Rejected,Correct,N/A,N/A,N/A,N/A,Correctly rejected as a non-bill.
+N03,Screenshot,Non-bill,Rejected,Correct,N/A,N/A,N/A,N/A,Correctly rejected as a non-bill.
+N04,Landscape,Non-bill,Rejected,Correct,N/A,N/A,N/A,N/A,Correctly rejected as a non-bill.
+N05,Other document,Non-bill,Rejected,Correct,N/A,N/A,N/A,N/A,Correctly rejected as a non-bill.
